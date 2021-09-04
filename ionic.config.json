@@ -1,0 +1,8 @@
+{
+  "name": "Daily Gratitude",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "bd928309"
+}
