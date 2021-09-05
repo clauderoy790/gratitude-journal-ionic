@@ -2,5 +2,8 @@
 	"appId": "io.ionic.starter",
 	"appName": "Daily Gratitude",
 	"webDir": "www",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://192.168.1.66:8100"
+	}
 }
