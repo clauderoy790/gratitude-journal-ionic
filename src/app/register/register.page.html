@@ -1,10 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
-  <ion-label>Register</ion-label>
+  <fa-icon icon="dove"></fa-icon>
+  <ion-label class="title">Daily Gratitude</ion-label>
+  <ion-item>
+    <span item-right><ion-icon name="person"></ion-icon></span>
+    <ion-input type="text" placeholder="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <span item-right><ion-icon name="lock-closed"></ion-icon></span>
+    <ion-input type="text" placeholder="Password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <span item-right><ion-icon name="lock-closed"></ion-icon></span>
+    <ion-input type="text" placeholder="Verify password"></ion-input>
+  </ion-item>
+  <ion-button color="white" (click)="registerClick()" fill="white"
+    >Register
+  </ion-button>
 </ion-content>
