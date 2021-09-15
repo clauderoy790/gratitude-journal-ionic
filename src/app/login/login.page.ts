@@ -13,7 +13,8 @@ export class LoginPage implements OnInit {
   loginClick() {
     console.log('login clicked');
   }
-  registerClick() {
+  registerClick(event: any) {
     console.log('clicked register');
+    console.log(typeof event);
   }
 }

@@ -10,5 +10,8 @@ export class RegisterPage implements OnInit {
 
   ngOnInit() {}
 
-  registerClick() {}
+  registerClick(event: any) {
+    console.log('type is: ' + typeof event);
+    console.log('salut');
+  }
 }
