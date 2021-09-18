@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="icon-container">
+    <fa-icon icon="dove" size="7x"></fa-icon>
+  </div>
+  <div class="title-container">
+    <ion-label class="title">Daily Gratitude</ion-label>
+  </div>
+  <div class="parent-container">
+    <div class="content-container">
+      <ion-item class="input">
+        <span item-right><ion-icon name="person"></ion-icon></span>
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item class="item-input" input>
+        <ion-input type="text" class="test" placeholder="Password">
+          <ion-icon
+            class="icon-margin-end"
+            name="lock-closed"
+            slot="start"
+          ></ion-icon>
+        </ion-input>
+      </ion-item>
+        <ion-label
+          ><span class="no-account-text">Don't have an account?</span>
+          <a class="register-button" routerLink="/register"
+            >Register</a
+          ></ion-label
+        >
+      <div class="button-container">
+        <ion-button class="login-button" (click)="loginClick()">
+          Sign In</ion-button
+        >
+      </div>
+    </div>
+  </div>
+</ion-content>
