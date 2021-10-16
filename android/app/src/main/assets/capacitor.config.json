@@ -1,5 +1,5 @@
 {
-	"appId": "io.ionic.starter",
+	"appId": "com.roy.dailygratitude",
 	"appName": "Daily Gratitude",
 	"webDir": "www",
 	"bundledWebRuntime": false
