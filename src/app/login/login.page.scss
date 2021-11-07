@@ -1,31 +1,14 @@
+:root {
+  --ion-color-secondary: #006600;
+  --ion-color-secondary-rgb: 0, 102, 0;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #005a00;
+  --ion-color-secondary-tint: #1a751a;
+}
+
 ion-content {
   --ion-background-color: #18171f;
-}
-
-.main {
-  // display: flex;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.main-containter {
-  // margin: auto;
-  // position: absolute;
-  // left: 50%;
-  // top: 50%;
-  // transform: translate(-50%, -50%);
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0 auto;
-  // align-self: center;
-  // vertical-align: middle;
-  width: 80%;
-  height: 90%;
 }
 
 fa-icon {
@@ -34,23 +17,23 @@ fa-icon {
 
 .title {
   color: white;
-  // font-size: 40px;
   font-size: 2.6rem;
   text-align: center;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 30%;
+.title-container {
+  height: 10vh;
 }
 
-.title-container {
+.center {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 15%;
+  justify-content: center;
+}
+
+.icon-container {
+  align-items: flex-end;
+  height: 30vh;
 }
 
 .parent-container {
@@ -67,46 +50,38 @@ fa-icon {
   width: 100%;
 }
 
-.no-account-text {
-  color: #6d6d78;
-  padding-right: 3%;
-}
-
 .register-button {
-  color: #ababae;
+  color: white;
+  margin-left: 1vw;
   text-decoration: none;
 }
 
 .item-input {
-  --border-top-width: 4px;
-  margin-bottom: 5%;
+  width: 80vw;
+  --border-width: 1px;
+  --border-color: rgba(255, 255, 255, 0.5);
+  --border-radius: 5px;
+  color: #6d6d78;
+  --highlight-background: rgba(255, 255, 255, 0.5);
+}
+
+.account-label {
   color: #6d6d78;
 }
 
-.test {
-  background-color: #1d1b23;
-  --border-style: solid;
-  border: 10px;
-  border-color: green;
+.no-bg {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: transparent;
 }
 
-.tt {
-  border-top: 4px blue;
-  border-bottom: 4px green;
-}
-
-.button-container {
-  background-color: blue;
-  height: 100%;
-}
 .login-button {
-  display: flex;
-  align-items: flex-end;
   color: #6d6d78;
   --background: white;
-  width: 100%;
-  height: 8%;
+  width: 80vw;
+  height: 8vh;
 }
+
 ion-button {
   --ion-background-color: white;
 }

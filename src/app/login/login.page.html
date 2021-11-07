@@ -1,42 +1,53 @@
 <ion-content>
-  <div class="main">
-
-    <div class="main-container">
-    <div class="icon-container">
-      <fa-icon icon="dove" size="7x"></fa-icon>
-    </div>
-    <div class="title-container">
-      <ion-label class="title">Daily Gratitude</ion-label>
-    </div>
-    <div class="parent-container">
-      <div class="content-container">
-      <ion-item class="input">
-        <span item-right><ion-icon name="person"></ion-icon></span>
-        <ion-input type="text" placeholder="Email"></ion-input>
-      </ion-item>
-      <ion-item class="item-input" input>
-        <ion-input type="text" class="test" placeholder="Password">
+  <ion-grid class="main">
+    <ion-row>
+      <ion-col class="center icon-container">
+        <fa-icon offset-sm="4" icon="dove" size="7x"></fa-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="center title-container">
+        <ion-label class="title">Daily Gratitude</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="parent-container">
+        <ion-item class="item-input">
           <ion-icon
-          class="icon-margin-end"
-          name="lock-closed"
-          slot="start"
-            ></ion-icon>
-          </ion-input>
+            name="person"
+            slot="start"
+            class="icon-margin-end"
+          ></ion-icon>
+          <ion-input type="text" placeholder="Email"></ion-input>
         </ion-item>
-        <ion-label
-        ><span class="no-account-text">Don't have an account?</span>
-        <a class="register-button" routerLink="/register"
-        >Register</a
-            ></ion-label
-            >
-          </div>
-        </div>
-        <div class="button-container">
-          <ion-button class="login-button" (click)="loginClick()">
-            Sign In</ion-button
-            >
-          </div>
-        </div>
-      </div>
-      </ion-content>
-        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="parent-container">
+        <ion-item class="item-input" input>
+          <ion-icon
+            class="icon-margin-end"
+            name="lock-closed"
+            slot="start"
+          ></ion-icon>
+          <ion-input type="text" placeholder="Password"> </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="parent-container">
+        <ion-item color="transparent">
+          <ion-label class="account-label">Don't have an account?</ion-label>
+          <a class="register-button" (routerLink="/register)">Register</a>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="parent-container">
+        <ion-button class="login-button" (click)="loginClick()">
+          Sign In</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
