@@ -18,7 +18,11 @@
             slot="start"
             class="icon-margin-end"
           ></ion-icon>
-          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-input
+            type="text"
+            [(ngModel)]="email"
+            placeholder="Email"
+          ></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -30,7 +34,8 @@
             name="lock-closed"
             slot="start"
           ></ion-icon>
-          <ion-input type="text" placeholder="Password"> </ion-input>
+          <ion-input type="text" [(ngModel)]="password" placeholder="Password">
+          </ion-input>
         </ion-item>
       </ion-col>
     </ion-row>

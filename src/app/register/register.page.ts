@@ -3,15 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  styleUrls: ['./register.page.scss', '../login/login.page.scss'],
 })
 export class RegisterPage implements OnInit {
+  email = '';
+  password = '';
+  verifyPassword = '';
+
   constructor() {}
 
   ngOnInit() {}
 
-  registerClick(event: any) {
-    console.log('type is: ' + typeof event);
-    console.log('salut');
+  registerClick() {
+    console.log('register click');
   }
 }

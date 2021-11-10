@@ -18,7 +18,7 @@
             slot="start"
             class="icon-margin-end"
           ></ion-icon>
-          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-input type="text" [(ngModel)]="email" placeholder="Email"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -30,23 +30,27 @@
             name="lock-closed"
             slot="start"
           ></ion-icon>
-          <ion-input type="text" placeholder="Password"> </ion-input>
+          <ion-input type="text" [(ngModel)]="password" placeholder="Password"> </ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="parent-container">
-        <ion-item color="transparent">
-          <ion-label class="account-label">Don't have an account?</ion-label>
-          <a class="register-button" [routerLink]="'register'">Register</a>
+        <ion-item class="item-input" input>
+          <ion-icon
+            class="icon-margin-end"
+            name="lock-closed"
+            slot="start"
+          ></ion-icon>
+          <ion-input type="text" [(ngModel)]="verifyPassword" placeholder="Verify Password"> </ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="parent-container">
-        <ion-button class="login-button" (click)="loginClick()">
-          Sign In</ion-button
-        >
+        <ion-button class="login-button" (click)="registerClick()">
+          <ion-label>Register</ion-label>
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
