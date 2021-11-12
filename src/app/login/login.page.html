@@ -10,33 +10,39 @@
         <ion-label class="title">Daily Gratitude</ion-label>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row class="fields-container">
       <ion-col class="parent-container">
-        <ion-item class="item-input">
-          <ion-icon
-            name="person"
-            slot="start"
-            class="icon-margin-end"
-          ></ion-icon>
-          <ion-input
-            type="text"
-            [(ngModel)]="email"
-            placeholder="Email"
-          ></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="parent-container">
-        <ion-item class="item-input" input>
-          <ion-icon
-            class="icon-margin-end"
-            name="lock-closed"
-            slot="start"
-          ></ion-icon>
-          <ion-input type="text" [(ngModel)]="password" placeholder="Password">
-          </ion-input>
-        </ion-item>
+        <ion-row>
+          <ion-col class="parent-container">
+            <ion-item class="item-input">
+              <ion-icon
+                name="person"
+                slot="start"
+                class="icon-margin-end"
+              ></ion-icon>
+              <ion-input
+                type="text"
+                [(ngModel)]="email"
+                placeholder="Email"
+              ></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col class="parent-container">
+            <ion-item class="item-input" input>
+              <ion-icon
+                class="icon-margin-end"
+                name="lock-closed"
+                slot="start"
+              ></ion-icon>
+              <ion-input
+                type="text"
+                [(ngModel)]="password"
+                placeholder="Password"
+              >
+              </ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
       </ion-col>
     </ion-row>
     <ion-row>

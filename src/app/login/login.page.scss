@@ -13,6 +13,7 @@ fa-icon {
 }
 
 .title-container {
+  margin-top:2vh;
   height: 10vh;
 }
 
@@ -25,6 +26,10 @@ fa-icon {
 .icon-container {
   align-items: flex-end;
   height: 30vh;
+}
+
+.fields-container {
+  height: 35vh;
 }
 
 .parent-container {
@@ -53,7 +58,7 @@ fa-icon {
   --border-color: rgba(255, 255, 255, 0.5);
   --border-radius: 15px;
   --color: #6d6d78;
-  --highlight-background: rgba(255, 255, 255, 0.0);
+  --highlight-background: rgba(255, 255, 255, 0);
 }
 
 .account-label {
